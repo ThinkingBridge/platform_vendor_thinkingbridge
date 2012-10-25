@@ -109,6 +109,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     VideoEditor \
     VoiceDialer \
+    Welcome \
     SoundRecorder \
     Basic
 
