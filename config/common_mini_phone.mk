@@ -9,9 +9,9 @@ include vendor/thinkingbridge/config/thinkingbridge_audio.mk
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=CyanTone.ogg \
-    ro.config.notification_sound=CyanMessage.ogg \
-    ro.config.alarm_alert=CyanAlarm.ogg
+    ro.config.ringtone=Canismajor.ogg \
+    ro.config.notification_sound=Capella.ogg \
+    ro.config.alarm_alert=Cesium.ogg
 
 PRODUCT_PACKAGES += \
   Mms
