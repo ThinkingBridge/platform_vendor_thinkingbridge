@@ -9,13 +9,13 @@ UI_PATH := vendor/thinkingbridge/prebuilt/common/media/audio/ui
 
 # Alarms
 PRODUCT_COPY_FILES += \
-	$(ALARM_PATH)/CyanAlarm.ogg:system/media/audio/alarms/Cesium.ogg
+	$(ALARM_PATH)/CyanAlarm.ogg:system/media/audio/alarms/CyanAlarm.ogg
 
 # Notifications
 PRODUCT_COPY_FILES += \
-	$(NOTIFICATION_PATH)/CyanMessage.ogg:system/media/audio/notifications/Capella.ogg \
+	$(NOTIFICATION_PATH)/CyanMessage.ogg:system/media/audio/notifications/CyanMessage.ogg \
 
 # Ringtones
 PRODUCT_COPY_FILES += \
-	$(RINGTONE_PATH)/CyanTone.ogg:system/media/audio/ringtones/Canismajor.ogg \
+	$(RINGTONE_PATH)/CyanTone.ogg:system/media/audio/ringtones/CyanTone.ogg \
 
