@@ -110,6 +110,7 @@ PRODUCT_PACKAGES += \
     VideoEditor \
     VoiceDialer \
     Welcome \
+    TBWallpapers \
     SoundRecorder \
     Basic
 
