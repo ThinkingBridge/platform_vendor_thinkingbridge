@@ -151,8 +151,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
 
-ThinkingBridge_VERSION := build1
-ThinkingBridge_VERSION := build1
+ThinkingBridge_VERSION := build2
+ThinkingBridge_VERSION := build2
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.thinkingbridge.version=$(ThinkingBridge_VERSION) \
