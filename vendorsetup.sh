@@ -1,4 +1,4 @@
-for combo in $(cat vendor/thinkingbridge/jenkins-build-targets)
-do
-    add_lunch_combo $combo
-done
+add_lunch_combo thinkingbridge_maguro-userdebug
+add_lunch_combo thinkingbridge_mako-userdebug
+add_lunch_combo thinkingbridge_manta-userdebug
+add_lunch_combo thinkingbridge_grouper-userdebug

@@ -1,4 +1,5 @@
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+# Common overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
 
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
@@ -91,9 +92,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
 
 # Rom version
-
-    TB_VERSION := build3
-    TB_VERSION := build3
+TB_VERSION := build3
+TB_VERSION := build3
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.tb.version=$(TB_VERSION) \
