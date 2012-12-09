@@ -2,3 +2,4 @@ add_lunch_combo thinkingbridge_maguro-userdebug
 add_lunch_combo thinkingbridge_mako-userdebug
 add_lunch_combo thinkingbridge_manta-userdebug
 add_lunch_combo thinkingbridge_grouper-userdebug
+add_lunch_combo thinkingbridge_crespo-userdebug
