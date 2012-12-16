@@ -42,24 +42,15 @@ include vendor/thinkingbridge/config/themes_common.mk
 # Required TB packages
 PRODUCT_PACKAGES += \
     Camera \
-    Development \
     LatinIME \
-    SpareParts \
     Superuser \
     su
 
 # Optional TB packages
 PRODUCT_PACKAGES += \
     VideoEditor \
-    VoiceDialer \
     SoundRecorder \
     Basic
-
-# Custom TB packages
-PRODUCT_PACKAGES += \
-    DSPManager \
-    libcyanogen-dsp \
-    audio_effects.conf
 
 # Extra tools in TB
 PRODUCT_PACKAGES += \
@@ -83,10 +74,6 @@ PRODUCT_PACKAGES += \
     sshd_config \
     ssh-keygen \
     start-ssh
-
-# rsync
-PRODUCT_PACKAGES += \
-    rsync
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
