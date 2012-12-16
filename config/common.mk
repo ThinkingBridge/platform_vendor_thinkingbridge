@@ -78,10 +78,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
 
-# Rom version
-TB_VERSION := build3
-TB_VERSION := build3
-
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.tb.version=$(TB_VERSION) \
-  ro.modversion=$(TB_VERSION)
+  ro.tb.version=$(TARGET_PRODUCT)_build4_$(shell date +"%m-%d-%Y")

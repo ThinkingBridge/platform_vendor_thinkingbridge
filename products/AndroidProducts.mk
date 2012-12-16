@@ -1,6 +1,6 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/grouper.mk \
-    $(LOCAL_DIR)/maguro.mk \
-    $(LOCAL_DIR)/mako.mk \
-    $(LOCAL_DIR)/manta.mk \
-    $(LOCAL_DIR)/crespo.mk
+    $(LOCAL_DIR)/thinkingbridge_grouper.mk \
+    $(LOCAL_DIR)/thinkingbridge_maguro.mk \
+    $(LOCAL_DIR)/thinkingbridge_mako.mk \
+    $(LOCAL_DIR)/thinkingbridge_manta.mk \
+    $(LOCAL_DIR)/thinkingbridge_crespo.mk
