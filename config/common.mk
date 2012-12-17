@@ -50,6 +50,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     VideoEditor \
     SoundRecorder \
+    Welcome \
+    TBWallpapers \
     Basic
 
 # Extra tools in TB
