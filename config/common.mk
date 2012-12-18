@@ -115,7 +115,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
 
 # goo.im properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.goo.developerid=teambridge \
+    ro.goo.developerid=thinkingbridgerom \
     ro.goo.rom=thinkingbridgerom \
     ro.goo.version=$(shell date +%s)
 
