@@ -2,7 +2,7 @@
 $(call inherit-product, device/samsung/manta/full_manta.mk)
 
 # Inherit TB common bits
-$(call inherit-product, vendor/thinkingbridge/config/common.mk)
+$(call inherit-product, vendor/thinkingbridge/config/common_tablet.mk)
 
 # Setup device specific product configuration
 PRODUCT_NAME := thinkingbridge_manta
