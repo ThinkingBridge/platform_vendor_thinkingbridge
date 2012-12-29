@@ -1,6 +1,12 @@
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
 
+## Build Information Properties
+
+DATE = $(shell vendor/thinkingbridge/tools/getdate)
+
+VERSION_MOD_NAME = build4
+
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -9,7 +15,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=false
+    ro.com.android.dataroaming=false \
+    ro.tb.version=$(TARGET_PRODUCT)_build4_$(shell date +"%m-%d-%Y") \
+    ro.modversion=$(VERSION_MOD_NAME)
+
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 # init.d support
 PRODUCT_COPY_FILES += \
@@ -30,10 +40,6 @@ PRODUCT_COPY_FILES += \
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
-
-# Don't export PS1 in /system/etc/mkshrc.
-PRODUCT_COPY_FILES += \
-    vendor/thinkingbridge/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
 # T-Mobile theme engine
 include vendor/thinkingbridge/config/themes_common.mk
@@ -78,6 +84,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
-
-PRODUCT_PROPERTY_OVERRIDES += \
-  ro.tb.version=$(TARGET_PRODUCT)_build4_$(shell date +"%m-%d-%Y")
