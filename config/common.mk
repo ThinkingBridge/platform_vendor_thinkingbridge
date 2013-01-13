@@ -58,6 +58,12 @@ PRODUCT_PACKAGES += \
     Welcome \
     TBWallpapers \
     Basic
+    
+# Sound effect
+PRODUCT_PACKAGES += \
+    DSPManager \
+    libcyanogen-dsp \
+    audio_effects.conf
 
 # Extra tools in TB
 PRODUCT_PACKAGES += \
