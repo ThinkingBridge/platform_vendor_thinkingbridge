@@ -62,6 +62,7 @@ PRODUCT_PACKAGES += \
     
 # CyanogenMod Packages
 PRODUCT_PACKAGES += \
+    LockClock \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf
