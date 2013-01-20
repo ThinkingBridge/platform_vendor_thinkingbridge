@@ -57,9 +57,10 @@ PRODUCT_PACKAGES += \
     SoundRecorder \
     Welcome \
     TBWallpapers \
+    Customized \
     Basic
     
-# Sound effect
+# CyanogenMod Packages
 PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
