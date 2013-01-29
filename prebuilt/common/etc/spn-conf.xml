@@ -20,4 +20,6 @@
   <spnOverride numeric="46693" spn="東信電訊" />
   <spnOverride numeric="46697" spn="台灣大哥大" />
   <spnOverride numeric="46699" spn="泛亞電信" />
+  <!-- Korea -->
+  <spnOverride numeric="45005" spn="" />
 </spnOverrides>
