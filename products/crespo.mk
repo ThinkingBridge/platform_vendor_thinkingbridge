@@ -17,4 +17,4 @@ PRODUCT_MODEL := Nexus S
 PRODUCT_MANUFACTURER := Samsung
 
 #Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=soju BUILD_FINGERPRINT="google/soju/crespo:4.2.1/JOP40G/485486:user/release-keys" PRIVATE_BUILD_DESC="soju-user 4.2.1 JOP40G 485486 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=soju BUILD_FINGERPRINT="google/soju/crespo:4.2.1/JOP40D/485486:user/release-keys" PRIVATE_BUILD_DESC="soju-user 4.2.1 JOP40D 485486 release-keys"
