@@ -64,6 +64,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LockClock \
     Torch \
+    CMFileManager \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf
