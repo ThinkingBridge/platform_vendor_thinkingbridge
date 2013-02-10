@@ -4,3 +4,4 @@ add_lunch_combo thinkingbridge_manta-userdebug
 add_lunch_combo thinkingbridge_grouper-userdebug
 add_lunch_combo thinkingbridge_crespo-userdebug
 add_lunch_combo thinkingbridge_i9100-userdebug
+add_lunch_combo thinkingbridge_i9300-userdebug
