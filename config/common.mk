@@ -64,6 +64,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LockClock \
     Torch \
+    Trebuchet \
     CMFileManager \
     DSPManager \
     libcyanogen-dsp \
