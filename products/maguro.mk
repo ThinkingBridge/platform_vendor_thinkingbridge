@@ -7,6 +7,9 @@ $(call inherit-product, vendor/thinkingbridge/config/common.mk)
 # Inherit GSM common stuff
 $(call inherit-product, vendor/thinkingbridge/config/gsm.mk)
 
+# Tuna overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/tuna
+
 # Setup device specific product configuration.
 PRODUCT_NAME := thinkingbridge_maguro
 PRODUCT_BRAND := google
