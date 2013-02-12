@@ -19,14 +19,8 @@ Then to sync up:
 Building
 --------
 
-After the sync is finished, please read the [instructions from the Android site](http://s.android.com/source/building.html) on how to build.
-
-Once you've read that, you can build with
-
-    mka
-
 This will compile everything and use the correct "-j#" flag.
 
 You can also build a flashable zip with
 
-    mka bacon
+    time mka bacon
