@@ -3,8 +3,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
 
 ## Build Information Properties
 
-DATE = $(shell vendor/thinkingbridge/tools/getdate)
-
 VERSION_MOD_NAME = build6
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -16,10 +14,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
-    ro.tb.version=$(TARGET_PRODUCT)_build5_$(shell date +"%m-%d-%Y") \
+    ro.tb.version=$(TARGET_PRODUCT)_build6_$(shell date +"%y-%m-%d") \
     ro.modversion=$(VERSION_MOD_NAME)
-
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 # init.d support
 PRODUCT_COPY_FILES += \
