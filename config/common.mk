@@ -5,7 +5,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
 
 DATE = $(shell vendor/thinkingbridge/tools/getdate)
 
-VERSION_MOD_NAME = build5
+VERSION_MOD_NAME = build6
 
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
