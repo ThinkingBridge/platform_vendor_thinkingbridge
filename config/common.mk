@@ -14,8 +14,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
+    ro.kernel.android.checkjni=0 \
     ro.tb.version=$(TARGET_PRODUCT)_beta1_$(shell date +"%y-%m-%d") \
     ro.modversion=$(VERSION_MOD_NAME)
+
+# Enable ADB authentication
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 
 # init.d support
 PRODUCT_COPY_FILES += \
