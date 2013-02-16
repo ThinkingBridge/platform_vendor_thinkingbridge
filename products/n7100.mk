@@ -8,7 +8,7 @@ $(call inherit-product, vendor/thinkingbridge/config/common.mk)
 $(call inherit-product, vendor/thinkingbridge/config/gsm.mk)
 
 # Setup device specific product configuration.
-PRODUCT_NAME := n7100
+PRODUCT_NAME := thinkingbridge_n7100
 PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := n7100
 PRODUCT_MODEL := GT-N7100
