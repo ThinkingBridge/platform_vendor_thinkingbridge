@@ -15,3 +15,7 @@ PRODUCT_MODEL := GT-I9300
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=m0xx TARGET_DEVICE=m0 BUILD_FINGERPRINT="samsung/m0xx/m0:4.2.2/JDQ39/I9300XXDLIB:user/release-keys" PRIVATE_BUILD_DESC="m0xx-user 4.2.2 JDQ39 I9300XXDLIB release-keys"
+
+# Copy device specific prebuilt files.
+PRODUCT_COPY_FILES += \
+    vendor/thinkingbridge/prebuilt/bootanimations/BOOTANIMATION-720x1280.zip:system/media/bootanimation.zip
