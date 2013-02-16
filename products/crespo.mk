@@ -10,6 +10,9 @@ $(call inherit-product, device/samsung/crespo/full_crespo.mk)
 # Enhanced NFC
 $(call inherit-product, vendor/thinkingbridge/config/nfc_enhanced.mk)
 
+# Crespo overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/crespo
+
 PRODUCT_NAME := thinkingbridge_crespo
 PRODUCT_DEVICE := crespo
 PRODUCT_BRAND := Google
