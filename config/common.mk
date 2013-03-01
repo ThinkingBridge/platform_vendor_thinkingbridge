@@ -1,3 +1,7 @@
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+
+SUPERUSER_EMBEDDED := true
+
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
 
