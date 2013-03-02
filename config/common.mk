@@ -65,7 +65,7 @@ PRODUCT_PACKAGES += \
     SoundRecorder \
     Welcome \
     TBWallpapers \
-    Customized \
+    ROMControl \
     Basic
     
 # CyanogenMod Packages
