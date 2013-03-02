@@ -43,11 +43,6 @@ PRODUCT_COPY_FILES += \
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
-    
-# Bring in camera effects
-PRODUCT_COPY_FILES +=  \
-    vendor/thinkingbridge/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/thinkingbridge/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 # T-Mobile theme engine
 include vendor/thinkingbridge/config/themes_common.mk
