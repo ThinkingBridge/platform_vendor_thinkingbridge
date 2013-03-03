@@ -47,6 +47,9 @@ PRODUCT_COPY_FILES += \
 # T-Mobile theme engine
 include vendor/thinkingbridge/config/themes_common.mk
 
+# Superuser
+SUPERUSER_PACKAGE := com.koushaosp.superuser
+
 # Required TB packages
 PRODUCT_PACKAGES += \
     Camera \
