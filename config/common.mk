@@ -1,6 +1,7 @@
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
