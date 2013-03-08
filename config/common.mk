@@ -29,6 +29,10 @@ PRODUCT_COPY_FILES += \
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/thinkingbridge/prebuilt/common/bin/sysinit:system/bin/sysinit
+    
+# Libs
+PRODUCT_COPY_FILES += \
+    vendor/thinkingbridge/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
 # userinit support
 PRODUCT_COPY_FILES += \
