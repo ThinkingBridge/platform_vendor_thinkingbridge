@@ -21,9 +21,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false \
     ro.tb.version=$(TARGET_PRODUCT)_beta3_$(shell date +"%y-%m-%d") \
     ro.modversion=$(VERSION_MOD_NAME)
-
-# Enable ADB authentication
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
+    
+# Copy specific ROM files
+PRODUCT_COPY_FILES += \
+    vendor/thinkingbridge/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk 
 
 # init.d support
 PRODUCT_COPY_FILES += \
@@ -102,3 +103,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
+
+# goo.im properties
+ifneq ($(DEVELOPER_VERSION),true)
+    PRODUCT_PROPERTY_OVERRIDES += \
+      ro.goo.developerid=thinkingbridgerom \
+      ro.goo.rom=thinkingbridgerom \
+      ro.goo.version=$(shell date +%s)
+endif
