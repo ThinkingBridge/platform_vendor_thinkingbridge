@@ -111,7 +111,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
 # goo.im properties
 ifneq ($(DEVELOPER_VERSION),true)
     PRODUCT_PROPERTY_OVERRIDES += \
-      ro.goo.developerid=thinkingbridgerom \
+      ro.goo.developerid=teambridge \
       ro.goo.rom=thinkingbridgerom \
       ro.goo.version=$(shell date +%s)
 endif
