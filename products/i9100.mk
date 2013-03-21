@@ -8,7 +8,7 @@ $(call inherit-product, vendor/thinkingbridge/config/common.mk)
 $(call inherit-product, vendor/thinkingbridge/config/gsm.mk)
 
 # GalaxyS2 overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/i9100
+PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/s2-common
 
 # Setup device specific product configuration.
 PRODUCT_NAME := thinkingbridge_i9100
