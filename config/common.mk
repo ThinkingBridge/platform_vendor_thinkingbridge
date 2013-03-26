@@ -8,7 +8,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
 
 ## Build Information Properties
 
-VERSION_MOD_NAME = beta3.5
+VERSION_MOD_NAME = beta4
 
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
@@ -19,7 +19,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
-    ro.tb.version=$(TARGET_PRODUCT)_beta3.5_$(shell date +"%y-%m-%d") \
+    ro.tb.version=$(TARGET_PRODUCT)_beta4_$(shell date +"%y-%m-%d") \
     ro.modversion=$(VERSION_MOD_NAME)
     
 # Copy specific ROM files
@@ -70,6 +70,7 @@ PRODUCT_PACKAGES += \
     Welcome \
     TBWallpapers \
     ROMControl \
+    DashClock \
     Basic
     
 # CyanogenMod Packages
@@ -109,9 +110,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
 
 # goo.im properties
-ifneq ($(DEVELOPER_VERSION),true)
-    PRODUCT_PROPERTY_OVERRIDES += \
-      ro.goo.developerid=teambridge \
-      ro.goo.rom=thinkingbridgerom \
-      ro.goo.version=$(shell date +%s)
-endif
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.developerid=teambridge \
+    ro.goo.rom=thinkingbridgerom \
+    ro.goo.version=$(shell date +%s)
+
+# Message displayed while flashing ROM
+PRODUCT_MOTD :="\n+-----------ThinkingBridge ROM $(VERSION_MOD_NAME)-----------+\n|--| http://tbridge.kr | support@tbridge.kr |--|\n|--| Follow: @TbridgeROM for news & updates |--|\n+----------------------------------------------+\n"
