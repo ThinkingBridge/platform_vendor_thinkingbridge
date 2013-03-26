@@ -7,6 +7,9 @@ $(call inherit-product, vendor/thinkingbridge/config/common.mk)
 # Inherit GSM files.
 $(call inherit-product, vendor/thinkingbridge/config/gsm.mk)
 
+# GalaxyNote overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/note-common
+
 # Setup device specific product configuration.
 PRODUCT_NAME := thinkingbridge_n7100
 PRODUCT_BRAND := samsung
