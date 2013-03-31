@@ -70,7 +70,6 @@ PRODUCT_PACKAGES += \
     Welcome \
     TBWallpapers \
     ROMControl \
-    DashClock \
     Basic
     
 # CyanogenMod Packages
