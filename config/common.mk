@@ -115,4 +115,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.version=$(shell date +%s)
 
 # Message displayed while flashing ROM
-PRODUCT_MOTD :="\n+-----------ThinkingBridge ROM $(VERSION_MOD_NAME)-----------+\n|--| http://tbridge.kr | support@tbridge.kr |--|\n|--| Follow: @TbridgeROM for news & updates |--|\n+----------------------------------------------+\n"
+PRODUCT_MOTD :="\n+-----------ThinkingBridge ROM $(VERSION_MOD_NAME)----------+\n|--| http://tbridge.kr | support@tbridge.kr |--|\n|--| Follow: @TbridgeROM for news & updates |--|\n+----------------------------------------------+\n"
