@@ -1,7 +1,7 @@
 # Inherit GSM files.
 $(call inherit-product, vendor/thinkingbridge/config/gsm.mk)
 
-# Inherit some common CM stuff.
+# Inherit some common TB stuff.
 $(call inherit-product, vendor/thinkingbridge/config/common.mk)
 
 # Inherit device configuration
