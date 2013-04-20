@@ -9,3 +9,4 @@ add_lunch_combo thinkingbridge_i9100g-userdebug
 add_lunch_combo thinkingbridge_i9300-userdebug
 add_lunch_combo thinkingbridge_n7000-userdebug
 add_lunch_combo thinkingbridge_n7100-userdebug
+add_lunch_combo thinkingbridge_pyramid-userdebug
