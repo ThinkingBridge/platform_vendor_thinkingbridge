@@ -31,13 +31,6 @@
         android:title="@string/interface_navring_settings_title"
         android:summary="@string/interface_navring_settings_summary" />
      
-     <!--<header
-        android:id="@+id/hardware_keys"
-        android:fragment="com.aokp.romcontrol.fragments.HardwareKeys"
-        android:title="@string/hardware_keys_title"
-        android:icon="@drawable/ic_thinkingbridge_hardware_keys"
-        android:summary="@string/header_summary_hardware_keys" />-->
-     
      <header
          android:id="@+id/pie_control"
          android:icon="@drawable/ic_thinkingbridge_pie"
@@ -46,6 +39,13 @@
          android:summary="@string/pie_controls_summary" />
      
      <!-- Statusbar -->   
+
+     <header
+        android:id="@+id/ribbon_targets"
+        android:fragment="com.aokp.romcontrol.fragments.RibbonTargets"
+        android:icon="@drawable/ic_rom_control_ribbon"
+        android:title="@string/ribbon_settings_title"
+        android:summary="@string/ribbon_settings_summary" />
 
     <header
         android:id="@+id/statusbar"
@@ -92,13 +92,6 @@
         android:summary="@string/header_summary_lockscreens" />
      
      <header
-        android:id="@+id/lockscreen_targets"
-        android:fragment="com.aokp.romcontrol.fragments.LockscreenTargets"
-        android:summary="@string/lockscreen_target_summary"
-        android:icon="@drawable/ic_thinkingbridge_lockscreen_targets"
-        android:title="@string/lockscreen_target_title" />
-     
-     <header
         android:id="@+id/lockscreen_shortcuts"
         android:fragment="com.aokp.romcontrol.fragments.Shortcuts"
         android:summary="@string/lock_screen_shortcuts_summary"
@@ -119,13 +112,13 @@
         android:id="@+id/system"
         android:title="@string/header_system" />
 
-    <!--<header
+    <header
         android:id="@+id/led"
         android:fragment="com.aokp.romcontrol.fragments.LEDControl"
         android:title="@string/led_options"
         android:icon="@drawable/ic_thinkingbridge_led"
-        android:summary="@string/header_summary_led" />-->
-        
+        android:summary="@string/header_summary_led" />
+
     <header
         android:id="@+id/spen"
         android:fragment="com.aokp.romcontrol.fragments.SPenGestures"
