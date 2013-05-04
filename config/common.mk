@@ -68,7 +68,7 @@ PRODUCT_PACKAGES += \
     VideoEditor \
     SoundRecorder \
     Welcome \
-    TBWallpapers \
+    TBWallpaper \
     ROMControl \
     Basic
     
