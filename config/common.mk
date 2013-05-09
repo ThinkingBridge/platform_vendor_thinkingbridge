@@ -27,6 +27,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(VERSION_MOD_NAME) \
     ro.teambridge.author=$(TEAM_BRIDGE_AUTHOR)
     
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/thinkingbridge/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/thinkingbridge/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/thinkingbridge/prebuilt/common/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
+    
 # Copy specific ROM files
 PRODUCT_COPY_FILES += \
     vendor/thinkingbridge/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk 
