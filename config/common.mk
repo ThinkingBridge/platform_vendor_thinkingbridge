@@ -21,7 +21,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=3
     
 # TeamBridge version
-VERSION_MOD_NAME := stable2
+# SB = Stable Build <version number> 
+VERSION_MOD_NAME := SB3
 TEAM_BRIDGE_AUTHOR := TeamBridge
 
 PRODUCT_PROPERTY_OVERRIDES += \
