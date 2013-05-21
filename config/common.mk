@@ -18,7 +18,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
     ro.kernel.android.checkjni=0 \
-    persist.sys.root_access=3
+    persist.sys.root_access=3 \
+    ro.pa.family=$(OVERLAY_TARGET)
     
 # TeamBridge version
 # SB = Stable Build <version number> 
@@ -59,6 +60,21 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/thinkingbridge/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/thinkingbridge/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
+    
+# ParanoidAndroid Overlays
+PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/prebuilt/preferences/$(TARGET_PRODUCT)
+
+# Allow device family to add overlays and use a same prop.conf
+ifneq ($(OVERLAY_TARGET),)
+    PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/$(OVERLAY_TARGET)
+    PA_CONF_SOURCE := $(OVERLAY_TARGET)
+else
+    PA_CONF_SOURCE := $(TARGET_PRODUCT)
+endif
+
+PRODUCT_COPY_FILES += \
+    vendor/thinkingbridge/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/properties.conf \
+    vendor/thinkingbridge/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -95,6 +111,10 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf
+    
+# ParanoidAndroid Packages
+PRODUCT_PACKAGES += \
+    ParanoidPreferences
 
 # Extra tools in TB
 PRODUCT_PACKAGES += \

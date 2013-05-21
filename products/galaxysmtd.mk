@@ -10,6 +10,9 @@ $(call inherit-product, vendor/thinkingbridge/config/gsm.mk)
 # GalaxySmtd overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/s2-common
 
+# PA OVERLAY_TARGET
+OVERLAY_TARGET := pa_hdpi
+
 # Release name
 PRODUCT_RELEASE_NAME := GalaxyS
 

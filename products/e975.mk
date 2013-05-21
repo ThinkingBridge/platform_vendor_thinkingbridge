@@ -10,6 +10,9 @@ $(call inherit-product, vendor/thinkingbridge/config/gsm.mk)
 # Extra mako overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/mako
 
+# PA OVERLAY_TARGET
+OVERLAY_TARGET := pa_xhdpi
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := thinkingbridge_e975
 PRODUCT_DEVICE := e975

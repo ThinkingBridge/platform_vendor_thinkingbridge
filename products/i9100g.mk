@@ -10,6 +10,9 @@ $(call inherit-product, vendor/thinkingbridge/config/gsm.mk)
 # GalaxyS2 overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/s2-common
 
+# PA OVERLAY_TARGET
+OVERLAY_TARGET := pa_hdpi
+
 # Setup device specific product configuration.
 PRODUCT_NAME := thinkingbridge_i9100g
 PRODUCT_BRAND := samsung

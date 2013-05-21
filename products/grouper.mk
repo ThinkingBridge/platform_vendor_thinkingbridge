@@ -7,6 +7,9 @@ $(call inherit-product, vendor/thinkingbridge/config/common_tablet.mk)
 # Grouper overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/grouper
 
+# PA OVERLAY_TARGET
+OVERLAY_TARGET := pa_tvdpi
+
 # Setup device specific product configuration.
 PRODUCT_NAME := thinkingbridge_grouper
 PRODUCT_BRAND := google

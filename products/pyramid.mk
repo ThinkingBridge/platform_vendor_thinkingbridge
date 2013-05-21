@@ -13,6 +13,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/pyramid
 # Release name
 PRODUCT_RELEASE_NAME := thinkingbridge_pyramid
 
+# PA OVERLAY_TARGET
+OVERLAY_TARGET := pa_hdpi
+
 # Device naming
 PRODUCT_DEVICE := pyramid
 PRODUCT_NAME := thinkingbridge_pyramid

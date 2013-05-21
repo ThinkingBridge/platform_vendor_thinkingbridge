@@ -10,6 +10,9 @@ $(call inherit-product, vendor/thinkingbridge/config/gsm.mk)
 # Tuna overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/tuna
 
+# PA OVERLAY_TARGET
+OVERLAY_TARGET := pa_xhdpi
+
 # Setup device specific product configuration.
 PRODUCT_NAME := thinkingbridge_maguro
 PRODUCT_BRAND := google

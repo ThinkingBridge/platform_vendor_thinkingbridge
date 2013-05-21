@@ -10,6 +10,9 @@ $(call inherit-product, vendor/thinkingbridge/config/gsm.mk)
 # Extra mako overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/mako
 
+# PA OVERLAY_TARGET
+OVERLAY_TARGET := pa_xhdpi
+
 # Setup device specific product configuration
 PRODUCT_NAME := thinkingbridge_mako
 PRODUCT_BRAND := google
