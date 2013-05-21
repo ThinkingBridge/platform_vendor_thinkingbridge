@@ -88,7 +88,7 @@
         android:id="@+id/lockscreen"
         android:fragment="com.aokp.romcontrol.fragments.Lockscreens"
         android:title="@string/lockscreen_options"
-        android:icon="@drawable/ic_thinkingbridge_lockscreens"
+        android:icon="@drawable/ic_thinkingbridge_lockscreen_shortcuts"
         android:summary="@string/header_summary_lockscreens" />
         
     <header
@@ -96,7 +96,8 @@
         android:summary="@string/header_lock_clock_summary"
         android:icon="@drawable/ic_thinkingbridge_lockclock"
         android:title="@string/header_lock_clock_title" >
-        <intent android:action="android.intent.action.MAIN"
+        <intent 
+            android:action="android.intent.action.MAIN"
             android:targetPackage="com.cyanogenmod.lockclock"
             android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
     </header>
@@ -104,6 +105,18 @@
     <header
         android:id="@+id/system"
         android:title="@string/header_system" />
+        
+    <!-- Hybrid Settings -->
+    <header
+        android:id="@+id/hybrid_settings"
+        android:icon="@drawable/ic_hybrid_settings"
+        android:title="@string/hybrid_settings"
+        android:summary="@string/header_summary_hybrid">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.paranoid.preferences"
+            android:targetClass="com.paranoid.preferences.MainActivity" />
+    </header>
 
     <header
         android:id="@+id/led"
