@@ -1,4 +1,8 @@
 #!/bin/bash
+#
+# Squish a CM otapackage for distribution
+#
+# cyanogen
 
 . $ANDROID_BUILD_TOP/vendor/thinkingbridge/tools/colors
 
@@ -168,7 +172,7 @@ OUTFILE=$OUT/$MODVERSION.zip
 OVERLAYTARGET=`grep 'ro.pa.family=' $REPACK/ota/system/build.prop | sed -e 's/ro.pa.family=//g'`
 
 # Copy PA overlays
-printf "Copying overlay preferences for $OVERLAYTARGET..."
+printf "Paranoid android overlay preferences $OVERLAYTARGET..."
 echo
 mkdir $REPACK/ota/system/etc/paranoid/preferences
 mkdir $REPACK/ota/system/etc/paranoid/preferences/images
@@ -176,10 +180,10 @@ cp -r $ANDROID_BUILD_TOP/vendor/thinkingbridge/prebuilt/preferences/images/* $RE
 cp -r $ANDROID_BUILD_TOP/vendor/thinkingbridge/prebuilt/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
 
 # Pack it up and sign
-echo -e $CL_CYN"Zipping package..."$CL_RST
+echo -e $CL_CYN"Zipping & Signing package..."$CL_RST
 ( cd $REPACK/ota; zip $QUIET -r $REPACK/update.zip . )
 echo -e
-echo -e $CL_CYN"Signing package..."$CL_RST
+echo -e $CL_CYN"Ya! feel so good!"$CL_RST
 SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
 java -Xmx1024m \
 	-jar $OUT_DIR/host/$OUT_TARGET_HOST/framework/signapk.jar \
