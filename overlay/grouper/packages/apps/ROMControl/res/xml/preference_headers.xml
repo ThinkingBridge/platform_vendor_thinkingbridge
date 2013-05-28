@@ -45,33 +45,39 @@
         android:fragment="com.aokp.romcontrol.fragments.PieControl"
         android:icon="@drawable/ic_thinkingbridge_pie"
         android:title="@string/pie_control_title" /> 
+        
+     <header
+        android:key="edge_swipe_navigation"
+        android:fragment="com.aokp.romcontrol.fragments.EdgeSwipeNavigation"
+        android:icon="@drawable/ic_rom_control_edge"
+        android:title="@string/edge_swipe_title" />
 
-    <header
+     <header
         android:id="@+id/statusbar"
         android:title="@string/header_statusbar" />
 
-    <header
+     <header
         android:id="@+id/statusbar_toggles"
         android:title="@string/toggles_layout"
         android:fragment="com.aokp.romcontrol.fragments.StatusBarToggles"
         android:icon="@drawable/ic_thinkingbridge_quick_settings"
         android:summary="@string/header_summary_toggles" />
     
-    <header
+     <header
         android:id="@+id/statusbar_battery"
         android:title="@string/battery"
         android:fragment="com.aokp.romcontrol.fragments.StatusBarBattery"
         android:icon="@drawable/ic_thinkingbridge_battery"
         android:summary="@string/header_summary_battery" />
 
-    <header
+     <header
         android:id="@+id/statusbar_clock"
         android:fragment="com.aokp.romcontrol.fragments.StatusBarClock"
         android:summary="@string/header_summary_clock"
         android:icon="@drawable/ic_thinkingbridge_clock"
         android:title="@string/clock" />
 
-    <header
+     <header
         android:id="@+id/statusbar_signal"
         android:title="@string/signal"
         android:fragment="com.aokp.romcontrol.fragments.StatusBarSignal"
@@ -90,7 +96,7 @@
         android:icon="@drawable/ic_thinkingbridge_lockscreen_shortcuts"
         android:summary="@string/header_summary_lockscreens" />
         
-    <header
+     <header
         android:id="@+id/lockscreen_lock_clock"
         android:summary="@string/header_lock_clock_summary"
         android:icon="@drawable/ic_thinkingbridge_lockclock"
@@ -98,27 +104,27 @@
         <intent android:action="android.intent.action.MAIN"
             android:targetPackage="com.cyanogenmod.lockclock"
             android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
-    </header>
+     </header>
 
-    <header
+     <header
         android:id="@+id/system"
         android:title="@string/header_system" />
 
-    <header
+     <header
         android:id="@+id/led"
         android:fragment="com.aokp.romcontrol.fragments.LEDControl"
         android:title="@string/led_options"
         android:icon="@drawable/ic_thinkingbridge_led"
         android:summary="@string/header_summary_led" />
 
-    <header
+     <header
         android:id="@+id/spen"
         android:fragment="com.aokp.romcontrol.fragments.SPenGestures"
         android:title="@string/spen_options"
         android:icon="@drawable/ic_rom_control_spen"
         android:summary="@string/header_summary_spen" />
 
-    <header
+     <header
         android:id="@+id/sound"
         android:fragment="com.aokp.romcontrol.fragments.Sound"
         android:title="@string/sound"
