@@ -19,8 +19,9 @@ Then to sync up:
 Building
 --------
 
-This will compile everything and use the correct "-j#" flag.
+Now run our build script:
 
-You can also build a flashable zip with
+    ./build-tb.sh -device-
 
-    time mka bacon
+example:
+    ./build-tb.sh mako
