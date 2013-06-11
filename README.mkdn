@@ -24,4 +24,5 @@ Now run our build script:
     ./build-tb.sh -device-
 
 example:
+
     ./build-tb.sh mako
