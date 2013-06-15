@@ -1,8 +1,5 @@
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
-SUPERUSER_EMBEDDED := true
-SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
-
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
 
@@ -38,7 +35,8 @@ PRODUCT_COPY_FILES += \
     
 # Copy specific ROM files
 PRODUCT_COPY_FILES += \
-    vendor/thinkingbridge/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk 
+    vendor/thinkingbridge/prebuilt/common/xbin/su:system/xbin/su \
+    vendor/thinkingbridge/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk
 
 # init.d support
 PRODUCT_COPY_FILES += \
@@ -66,9 +64,6 @@ PRODUCT_COPY_FILES += \
 
 # T-Mobile theme engine
 include vendor/thinkingbridge/config/themes_common.mk
-
-# Superuser
-SUPERUSER_PACKAGE := com.koushaosp.superuser
 
 # Required TB packages
 PRODUCT_PACKAGES += \
