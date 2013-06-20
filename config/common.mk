@@ -32,11 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/thinkingbridge/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/thinkingbridge/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/thinkingbridge/prebuilt/common/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
-    
-# Copy specific ROM files
-PRODUCT_COPY_FILES += \
-    vendor/thinkingbridge/prebuilt/common/xbin/su:system/xbin/su \
-    vendor/thinkingbridge/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk
 
 # init.d support
 PRODUCT_COPY_FILES += \
@@ -58,6 +53,10 @@ PRODUCT_COPY_FILES += \
     vendor/thinkingbridge/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/thinkingbridge/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
 
+# prebuilt
+PRODUCT_COPY_FILES += \
+    vendor/thinkingbridge/prebuilt/common/xbin/su:system/xbin/su
+
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
@@ -68,9 +67,12 @@ include vendor/thinkingbridge/config/themes_common.mk
 # Required TB packages
 PRODUCT_PACKAGES += \
     Camera \
-    LatinIME \
-    Superuser \
-    su
+    LatinIME
+
+# prebuilts
+PRODUCT_PACKAGES += \
+    GooManager \
+    Superuser
 
 # Optional TB packages
 PRODUCT_PACKAGES += \

@@ -1,4 +1,4 @@
-# Copyright (C) 2012 The Android Open Source Project
+# Copyright (C) 2012 Goo-inside.me
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,30 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := $(call my-dir)
-
-#
-# Prebuilt APKs
-#
+LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
-LOCAL_MODULE := KoreanIME
-LOCAL_MODULE_OWNER := thinkingbridge
-LOCAL_SRC_FILES := common_tablet/apps/$(LOCAL_MODULE).apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .apk
+
+LOCAL_MODULE := GooManager
+LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
+
 LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := PRESIGNED
-include $(BUILD_PREBUILT)
-
-#
-# Prebuilt Libraries
-#
-include $(CLEAR_VARS)
-LOCAL_MODULE := libjni_koreanime
-LOCAL_MODULE_OWNER := thinkingbridge
-LOCAL_SRC_FILES := common_tablet/lib/$(LOCAL_MODULE).so
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_CERTIFICATE := PRESIGNED
 include $(BUILD_PREBUILT)
