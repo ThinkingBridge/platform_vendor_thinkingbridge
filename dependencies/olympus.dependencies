@@ -2,7 +2,7 @@
     {
         "remote":      "github",
         "account":     "CyanogenMod-Atrix",
-        "repository":  "android_kernel_samsung_crespo",
+        "repository":  "android_kernel_motorola_olympus",
         "target_path": "kernel/motorola/olympus",
         "revision":    "master"
     },
