@@ -19,7 +19,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     
 # TeamBridge version
 # SB = Stable Build <version number> 
-VERSION_MOD_NAME := SB3
+VERSION_MOD_NAME := SB4
 TEAM_BRIDGE_AUTHOR := TeamBridge
 
 PRODUCT_PROPERTY_OVERRIDES += \
