@@ -71,7 +71,6 @@ PRODUCT_PACKAGES += \
 
 # prebuilts
 PRODUCT_PACKAGES += \
-    GooManager \
     Superuser
 
 # Optional TB packages
@@ -80,7 +79,6 @@ PRODUCT_PACKAGES += \
     SoundRecorder \
     Welcome \
     TBWallpaper \
-    ROMControl \
     Basic
     
 # CyanogenMod Packages
@@ -88,7 +86,6 @@ PRODUCT_PACKAGES += \
     LockClock \
     Torch \
     Trebuchet \
-    CMFileManager \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf
@@ -118,12 +115,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
-
-# goo.im properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.goo.developerid=thinkingbridgerom \
-    ro.goo.rom=thinkingbridgerom \
-    ro.goo.version=$(shell date +%s)
 
 # Message displayed while flashing ROM
 PRODUCT_MOTD :="\n+------------ThinkingBridge ROM $(VERSION_MOD_NAME)------------+\n|--| http://tbridge.kr | support@tbridge.kr |--|\n|--| Follow: @TbridgeROM for news & updates |--|\n+----------------------------------------------+\n"
