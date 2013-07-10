@@ -94,7 +94,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     openvpn \
     e2fsck \
+    fsck.exfat \
     mke2fs \
+    mkfs.exfat \
+    mount.exfat \
+    ntfsfix \
+    ntfs-3g \
     tune2fs \
     bash \
     vim \
