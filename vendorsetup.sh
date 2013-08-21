@@ -12,4 +12,3 @@ add_lunch_combo thinkingbridge_n7100-userdebug
 add_lunch_combo thinkingbridge_pyramid-userdebug
 add_lunch_combo thinkingbridge_e975-userdebug
 add_lunch_combo thinkingbridge_olympus-userdebug
-add_lunch_combo thinkingbridge_umts_spyder-userdebug

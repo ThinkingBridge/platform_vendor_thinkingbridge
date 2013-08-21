@@ -11,5 +11,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/n7000.mk \
     $(LOCAL_DIR)/n7100.mk \
     $(LOCAL_DIR)/e975.mk \
-    $(LOCAL_DIR)/pyramid.mk \
-    $(LOCAL_DIR)/umts_spyder.mk
+    $(LOCAL_DIR)/pyramid.mk
