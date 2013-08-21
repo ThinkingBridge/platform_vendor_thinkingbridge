@@ -18,7 +18,3 @@ PRODUCT_MODEL := GT-N7100
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=t03gxx TARGET_DEVICE=t03g BUILD_FINGERPRINT="samsung/t03gxx/t03g:4.2.2/JDQ39/N7100XXALJ3:user/release-keys" PRIVATE_BUILD_DESC="t03gxx-user 4.2.2 JDQ39 N7100XXALJ3 release-keys"
-
-# Copy device specific prebuilt files.
-PRODUCT_COPY_FILES += \
-    vendor/thinkingbridge/prebuilt/bootanimations/BOOTANIMATION-720x1280.zip:system/media/bootanimation.zip

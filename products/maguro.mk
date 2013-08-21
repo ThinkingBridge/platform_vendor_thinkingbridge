@@ -22,7 +22,3 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=takju BUILD_FINGERPRINT=google/takj
 # Maguro specific packages
 PRODUCT_PACKAGES += \
     Thinkfree
-    
-# Copy device specific prebuilt files.
-PRODUCT_COPY_FILES += \
-    vendor/thinkingbridge/prebuilt/bootanimations/BOOTANIMATION-720x1280.zip:system/media/bootanimation.zip
