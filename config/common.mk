@@ -1,9 +1,5 @@
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
-#SuperUser
-SUPERUSER_EMBEDDED := true
-SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
-
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
 
@@ -18,17 +14,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
+    ro.kernel.android.checkjni=0 \
     persist.sys.root_access=3
     
-# ThinkingBridge stable version
+# TeamBridge version
 # SB = Stable Build <version number> 
-VERSION_MOD_NAME := SB5
-THINKING_BRIDGE_AUTHOR := ThinkingBridge
+VERSION_MOD_NAME := SB4
+TEAM_BRIDGE_AUTHOR := TeamBridge
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.thinkingbridge.version=$(TARGET_PRODUCT)_$(VERSION_MOD_NAME)_$(shell date +"%y-%m-%d") \
+    ro.tb.version=$(TARGET_PRODUCT)_$(VERSION_MOD_NAME)_$(shell date +"%y-%m-%d") \
     ro.modversion=$(VERSION_MOD_NAME) \
-    ro.thikningbridge.author=$(THINKING_BRIDGE_AUTHOR)
+    ro.teambridge.author=$(TEAM_BRIDGE_AUTHOR)
     
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -56,6 +53,10 @@ PRODUCT_COPY_FILES += \
     vendor/thinkingbridge/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/thinkingbridge/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
 
+# prebuilt
+PRODUCT_COPY_FILES += \
+    vendor/thinkingbridge/prebuilt/common/xbin/su:system/xbin/su
+
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
@@ -63,18 +64,21 @@ PRODUCT_COPY_FILES += \
 # T-Mobile theme engine
 include vendor/thinkingbridge/config/themes_common.mk
 
-# Required AOSP packages
+# Required TB packages
 PRODUCT_PACKAGES += \
     Camera \
     LatinIME
 
-# Optional ThinkingBridge packages
+# prebuilts
+PRODUCT_PACKAGES += \
+    Superuser
+
+# Optional TB packages
 PRODUCT_PACKAGES += \
     VideoEditor \
     SoundRecorder \
     Welcome \
     TBWallpaper \
-    SunBeam \
     Basic
     
 # CyanogenMod Packages
@@ -84,21 +88,25 @@ PRODUCT_PACKAGES += \
     Trebuchet \
     DSPManager \
     libcyanogen-dsp \
-    Superuser \
-    su \
     audio_effects.conf
 
-# Extra tools
+# Extra tools in TB
 PRODUCT_PACKAGES += \
+    openvpn \
     e2fsck \
-    mke2fs \
-    tune2fs \
-    nano \
-    mount.exfat \
     fsck.exfat \
+    mke2fs \
     mkfs.exfat \
+    mount.exfat \
     ntfsfix \
-    ntfs-3g
+    ntfs-3g \
+    tune2fs \
+    bash \
+    vim \
+    nano \
+    htop \
+    powertop \
+    lsof
 
 # Openssh
 PRODUCT_PACKAGES += \
@@ -112,3 +120,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
+
+# Message displayed while flashing ROM
+PRODUCT_MOTD :="\n+------------ThinkingBridge ROM $(VERSION_MOD_NAME)------------+\n|--| http://tbridge.kr | support@tbridge.kr |--|\n|--| Follow: @TbridgeROM for news & updates |--|\n+----------------------------------------------+\n"

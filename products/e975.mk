@@ -21,3 +21,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=geehrc_open_eu BUILD_FINGERPRINT=lg
 
 # Enable Torch
 PRODUCT_PACKAGES += Torch
+
+# Copy device specific prebuilt files.
+PRODUCT_COPY_FILES += \
+    vendor/thinkingbridge/prebuilt/bootanimations/BOOTANIMATION-720x1280.zip:system/media/bootanimation.zip
