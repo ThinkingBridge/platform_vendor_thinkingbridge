@@ -1,0 +1,14 @@
+[
+    {
+        "account":      "ThinkingBridge",
+        "repository":   "platform_device_asus_grouper",
+        "target_path":  "device/asus/grouper",
+        "revision":     "jb4.3"
+    },
+    {
+        "account":      "ThinkingBridge",
+        "repository":   "platform_kernel_asus_grouper",
+        "target_path":  "kernel/asus/grouper",
+        "revision":     "jb4.3"
+    }
+]

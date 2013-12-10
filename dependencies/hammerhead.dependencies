@@ -1,0 +1,14 @@
+[
+    {
+        "account":      "ThinkingBridge",
+        "repository":   "platform_device_lge_hammerhead",
+        "target_path":  "device/lge/hammerhead",
+        "revision":     "kitkat"
+    },
+    {
+        "account":      "ThinkingBridge",
+        "repository":   "platform_kernel_lge_hammerhead",
+        "target_path":  "kernel/lge/hammerhead",
+        "revision":     "kitkat"
+    }
+]
