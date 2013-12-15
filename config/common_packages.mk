@@ -5,6 +5,7 @@ PRODUCT_PACKAGES += \
 	VideoEditor \
 	VoiceDialer \
 	SoundRecorder \
+	BluetoothExt \
 	Basic
 
 # Additional apps
