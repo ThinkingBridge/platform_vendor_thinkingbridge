@@ -36,10 +36,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Additional packages
--include vendor/thinkingbridge/config/packages.mk
+-include vendor/thinkingbridge/config/common_packages.mk
 
 # Versioning
--include vendor/thinkingbridge/config/version.mk
+-include vendor/thinkingbridge/config/common_version.mk
 
 # Add our overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/thinkingbridge/overlay/common
