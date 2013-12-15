@@ -11,12 +11,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false \
     persist.sys.root_access=1
 
-# ThinkingBridge stable version
-# SB = Stable Build <version number> 
-VERSION_MOD_NAME := Stable6
+# version
+VERSION_MAJOR = Stable
+VERSION_MINOR = 6.0
+
+#Set ThinkingBridge version
+    THINKINGBRIDGE_VERSION := "thinkingbridge-KK-"$(VERSION_MAJOR)-$(VERSION_MINOR)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.thinkingbridge.version=$(TARGET_PRODUCT)_$(VERSION_MOD_NAME)_$(shell date -u +%Y%m%d)
+    ro.thinkingbridge.version=$(THINKINGBRIDGE_VERSION)
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
