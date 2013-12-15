@@ -15,3 +15,16 @@ To initialize your local repository using the ThinkingBridge trees, use a comman
 Then to sync up:
 
     repo sync
+    
+
+
+Building
+--------
+
+Now run our build script:
+
+    ./build-tb.sh -device-
+
+example:
+
+    ./build-tb.sh hammerhead

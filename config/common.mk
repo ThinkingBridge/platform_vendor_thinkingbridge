@@ -11,10 +11,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.com.android.dataroaming=false \
 	persist.sys.root_access=1
 
-# enable ADB authentication if not on eng build
-ifneq ($(TARGET_BUILD_VARIANT),eng)
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
-endif
+# ThinkingBridge stable version
+# SB = Stable Build <version number> 
+VERSION_MOD_NAME := Stable6
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.thinkingbridge.version=$(TARGET_PRODUCT)_$(VERSION_MOD_NAME)_$(shell date +"%y-%m-%d")
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -25,8 +27,8 @@ PRODUCT_COPY_FILES += \
 
 # init.d support
 PRODUCT_COPY_FILES += \
-	vendor/thinkingbridge/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner \
-	vendor/thinkingbridge/prebuilt/bin/sysinit:system/bin/sysinit
+    vendor/thinkingbridge/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/thinkingbridge/prebuilt/bin/sysinit:system/bin/sysinit
 
 # userinit support
 PRODUCT_COPY_FILES += \
@@ -38,7 +40,7 @@ PRODUCT_COPY_FILES += \
 
 # Enable SIP and VoIP on all targets
 PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Additional packages
 -include vendor/thinkingbridge/config/packages.mk
