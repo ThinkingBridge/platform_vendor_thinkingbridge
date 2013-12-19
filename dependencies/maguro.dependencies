@@ -7,8 +7,14 @@
     },
     {
         "account":      "CyanogenMod",
-        "repository":   "android_kernel_samsung_maguro",
-        "target_path":  "kernel/samsung/maguro",
+        "repository":   "android_device_samsung_tuna",
+        "target_path":  "device/samsung/tuna",
+        "revision":     "cm-11.0"
+    },
+    {
+        "account":      "CyanogenMod",
+        "repository":   "android_kernel_samsung_tuna",
+        "target_path":  "kernel/samsung/tuna",
         "revision":     "cm-11.0"
     }
 ]
