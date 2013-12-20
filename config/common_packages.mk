@@ -10,7 +10,8 @@ PRODUCT_PACKAGES += \
 
 # Additional apps
 PRODUCT_PACKAGES += \
-	TBSetupWizard
+	TBSetupWizard \
+	SuperSU
 
 PRODUCT_PACKAGES += \
 	CellBroadcastReceiver

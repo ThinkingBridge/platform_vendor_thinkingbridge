@@ -34,6 +34,13 @@ PRODUCT_COPY_FILES += \
 # Init script file with ThinkingBridge extras
 PRODUCT_COPY_FILES += \
     vendor/thinkingbridge/prebuilt/etc/init.local.rc:root/init.thinkingbridge.rc
+    
+# SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/thinkingbridge/prebuilt/bin/su:system/xbin/daemonsu \
+    vendor/thinkingbridge/prebuilt/bin/su:system/xbin/su \
+    vendor/thinkingbridge/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/thinkingbridge/prebuilt/apk/Superuser.apk:system/app/Superuser.apk
 
 # Enable SIP and VoIP on all targets
 PRODUCT_COPY_FILES += \
