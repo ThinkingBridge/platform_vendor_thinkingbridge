@@ -10,6 +10,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
     persist.sys.root_access=1
+    
+# force dalvik on data
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dexopt-data-only=1
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
