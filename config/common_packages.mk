@@ -11,7 +11,7 @@ PRODUCT_PACKAGES += \
 # Additional apps
 PRODUCT_PACKAGES += \
 	TBSetupWizard \
-	SuperSU
+	Firewall
 
 PRODUCT_PACKAGES += \
 	CellBroadcastReceiver
