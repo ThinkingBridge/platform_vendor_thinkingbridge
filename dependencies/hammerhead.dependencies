@@ -6,9 +6,9 @@
         "revision":     "kitkat"
     },
     {
-        "account":      "CyanogenMod",
-        "repository":   "android_kernel_lge_hammerhead",
+        "account":      "ThinkingBridge",
+        "repository":   "platform_kernel_lge_hammerhead",
         "target_path":  "kernel/lge/hammerhead",
-        "revision":     "cm-11.0"
+        "revision":     "kitkat"
     }
 ]
