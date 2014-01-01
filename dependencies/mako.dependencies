@@ -1,16 +1,14 @@
 [
     {
-        "remote": "github",
-        "account": "CyanogenMod",
-        "repository": "android_device_lge_mako",
-        "target_path": "device/lge/mako",
-        "revision": "cm-10.1"
+        "account":      "ThinkingBridge",
+        "repository":   "platform_device_lge_mako",
+        "target_path":  "device/lge/mako",
+        "revision":     "kitkat"
     },
     {
-        "remote": "github",
-        "account": "faux123",
-        "repository": "mako",
-        "target_path": "kernel/lge/mako",
-        "revision": "enhanced_stock"
+        "account": "CyanogenMod",
+        "repository": "android_kernel_google_msm",
+        "target_path": "kernel/google/msm",
+        "revision": "cm-11.0"
     }
 ]
