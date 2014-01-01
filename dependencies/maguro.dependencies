@@ -6,10 +6,10 @@
         "revision":     "kitkat"
     },
     {
-        "account":      "CyanogenMod",
-        "repository":   "android_device_samsung_tuna",
+        "account":      "ThinkingBridge",
+        "repository":   "platform_device_samsung_tuna",
         "target_path":  "device/samsung/tuna",
-        "revision":     "cm-11.0"
+        "revision":     "kitkat"
     },
     {
         "account":      "CyanogenMod",
