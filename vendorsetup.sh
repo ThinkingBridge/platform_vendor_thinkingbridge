@@ -1,1 +1,7 @@
 add_lunch_combo thinkingbridge_hammerhead-userdebug
+add_lunch_combo thinkingbridge_mako-userdebug
+add_lunch_combo thinkingbridge_grouper-userdebug
+add_lunch_combo thinkingbridge_maguro-userdebug
+add_lunch_combo thinkingbridge_crespo-userdebug
+add_lunch_combo thinkingbridge_n7100-userdebug
+add_lunch_combo thinkingbridge_e975-userdebug
