@@ -2,7 +2,7 @@
   {
     "account":      "ThinkingBridge",
     "repository":   "platform_device_samsung_i9300",
-    "target_path":  "device/samsung/n7100",
+    "target_path":  "device/samsung/i9300",
     "revision":     "kitkat"
   },
    {
