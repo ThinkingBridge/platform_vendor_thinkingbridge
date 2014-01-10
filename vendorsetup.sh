@@ -5,3 +5,4 @@ add_lunch_combo thinkingbridge_maguro-userdebug
 add_lunch_combo thinkingbridge_crespo-userdebug
 add_lunch_combo thinkingbridge_n7100-userdebug
 add_lunch_combo thinkingbridge_e975-userdebug
+add_lunch_combo thinkingbridge_i9300-userdebug
