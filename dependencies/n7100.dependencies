@@ -18,10 +18,10 @@
     "revision":     "kitkat"
   },
   {
-    "account":      "SlimRoms",
-    "repository":   "kernel_samsung_smdk4412",
+    "account":      "CyanogenMod",
+    "repository":   "android_kernel_samsung_smdk4412",
     "target_path":  "kernel/samsung/smdk4412",
-    "revision":     "kk4.4"
+    "revision":     "cm-11.0"
   }
 ]
 
