@@ -11,7 +11,8 @@ PRODUCT_PACKAGES += \
 # Additional apps
 PRODUCT_PACKAGES += \
 	TBSetupWizard \
-	Firewall
+	Firewall \
+	Chameleon
 
 PRODUCT_PACKAGES += \
 	CellBroadcastReceiver
