@@ -1,0 +1,20 @@
+[
+    {
+        "account":      "ThinkingBridge",
+        "repository":   "platform_device_lge_e980”,
+        "target_path":  "device/lge/e980”,
+        "revision":     "kitkat"
+    },
+    {
+        "account":      "ThinkingBridge",
+        "repository":   “platform_device_lge_gproj-common",
+        "target_path":  "device/lge/gproj-common"
+        "revision":     "kitkat"
+    },
+    {
+        "account":      "CyanogenMod",
+        "repository":   "lge-kernel-gproj",
+        "target_path":  "kernel/lge/gproj",
+        "revision":     "cm-11.0"
+    }
+]
