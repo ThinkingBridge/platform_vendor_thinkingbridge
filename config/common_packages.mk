@@ -12,7 +12,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	TBSetupWizard \
 	Firewall \
-	Chameleon
+	Recents
 
 PRODUCT_PACKAGES += \
 	CellBroadcastReceiver
