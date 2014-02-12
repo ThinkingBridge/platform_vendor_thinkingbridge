@@ -10,9 +10,11 @@ PRODUCT_PACKAGES += \
 
 # Additional apps
 PRODUCT_PACKAGES += \
-	TBSetupWizard \
-	Firewall \
-	Recents
+    Recents \
+	Apollo \
+	DSPManager \
+	libcyanogen-dsp \
+	audio_effects.conf
 
 PRODUCT_PACKAGES += \
 	CellBroadcastReceiver
@@ -32,4 +34,3 @@ PRODUCT_PACKAGES += \
 	mount.exfat \
 	fsck.exfat \
 	mkfs.exfat
-
