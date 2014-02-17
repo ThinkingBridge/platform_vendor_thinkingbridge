@@ -10,7 +10,8 @@ PRODUCT_PACKAGES += \
 
 # Additional apps
 PRODUCT_PACKAGES += \
-    Recents \
+	Recents \
+	Torch \
 	Apollo \
 	DSPManager \
 	libcyanogen-dsp \
