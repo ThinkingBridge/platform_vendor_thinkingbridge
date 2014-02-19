@@ -10,6 +10,7 @@ PRODUCT_PACKAGES += \
 
 # Additional apps
 PRODUCT_PACKAGES += \
+	ChameleonEngine \
 	Recents \
 	Torch \
 	Apollo \
